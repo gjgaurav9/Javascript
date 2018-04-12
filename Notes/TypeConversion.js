@@ -53,5 +53,6 @@ const val1 = String(5);
 const val2 = 6;
 const sum = Number(val1 + val2);
 
-console.log(sum);
-console.log(typeof sum);
+console.log(sum); //Output will be 56 as it will concate the values. 
+
+console.log(typeof sum);// Number
