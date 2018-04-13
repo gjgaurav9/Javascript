@@ -1,0 +1,51 @@
+1 :  Coverage area :  Basic Syntax, declaration, variable scope, data structure
+1.       Embed JavaScript in HTML document asking user’s name and then printing Hello <User_Name>
+2.       Create a dialogue box with “Welcome to my Website” message.
+
+
+
+2: Coverage area: Control flow and error handling 
+
+1.       Evaluate the expression: a. 7+5 b. “7” + “5” c. 7 * 5 d. 7/5 e. 7 % 5 2.
+2.       Write the segment of Script that would ask the user if he wants a greeting message and if he does, display a Gif file called Welcome .gif and display “Welcome to Netscape   
+          Navigator!” in the document window following the Gif 3.
+3.       Write the object definition for an object called car with four properties model, make, year & price.
+4.       Write a program to display a multiplication table.
+5.       Write a code to create a scrolling text in a text box.
+
+
+3: Coverage area: Function, Expression and Operators, Number and Dates
+
+1.       Write a JavaScript code to create a pull down menu box.
+2.      Use the date function get Date & set Date to prompt the user for an integer b/w 1 – 31 & return day of the week it represents.
+3.      Display time and print message accordingly e.g., ‘Good Morning’ in Morning etc.
+4.       Write a program to move a text with mouse pointer.
+4.      Write a program to change colour of text randomly.
+5.      Create a Web page using two image files, which switch between one another as the mouse pointer moves over the image. Use the On Mouse over and On Mouse out event   
+          handler.
+6.       Write a JavaScript code to accept radius & display the area of the circle.
+7.       Using JavaScript create a digital clock.
+8.       Using JavaScript create a calculator.
+
+
+ 4: Coverage area : String, Object and Event Handling
+1.	Create an HTML form that has a number of text boxes. The user fills the textboxes with data. Write a script that verifies that all textboxes have been filled. If a text box has been  
+left empty pop up an alert message indicating the box that has been left empty. When OK button is clicked, set focus to that specific textbox. If all the textboxes are filled, display thank you.
+2.      Create an HTML form that inputs employee details and display the same on the HTML page. 
+3.      Write a program, which prompts the user to enter a sum of two numbers and display whether the answer is correct or incorrect.
+4.      Illustrate how the reset button on the form functions.
+5.      Create a program to check for null or empty string.
+6.      Create a program to generate a hit counter.
+7.      Create a program to verify whether email address provided by the use is valid or invalid.
+
+
+5: Coverage area : Object, OOPs, External Libraris
+
+1.       Write a program to scroll the text on status bar.
+2.       Write a program to create a small window in main window.
+3.       The form consists of two multiple choice lists and one single choice list.
+a.       The first multiple choice list displays the major dishes available.
+b.      The second multiple choice list displays the stocks available.
+c.       The single choice list displays the miscellaneous (Milkshakes, soft drinks, softy etc. available. )
+4.       Create a web page with two forms, one office copy and one customer copy when user enters date in customer copy it gets updated in office copy.
+5.       Use JavaScript for authentication and verification of the textboxes in the static site developed by the candidate in HTML exercise.
