@@ -55,7 +55,7 @@ val = tags.split(',');
 // replace()
 val = str.replace('Brad', 'Jack');
 
-// includes() //returns the boolean
+// includes() //returns the boolean //similar to contains in JAVA
 val = str.includes('foo');
 
 console.log(val);

@@ -1,0 +1,23 @@
+.vr {
+  width:1px;
+  background-color:#000;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin-left: 50%;
+}
+
+.left{
+  border: 1px solid red;
+  width:49%;
+  float: left;
+  display: block;
+}
+
+.right{
+  border: 1px solid green;
+  width:49%;
+  float: right;
+  display: block;
+}
+

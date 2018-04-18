@@ -6,9 +6,10 @@
 
 2: Coverage area: Control flow and error handling 
 
-1.       Evaluate the expression: a. 7+5 b. “7” + “5” c. 7 * 5 d. 7/5 e. 7 % 5 2.
-2.       Write the segment of Script that would ask the user if he wants a greeting message and if he does, display a Gif file called Welcome .gif and display “Welcome to Netscape   
-          Navigator!” in the document window following the Gif 3.
+1.       Evaluate the expression: a. 7+5 b. “7” + “5” c. 7 * 5 d. 7/5 e. 7 % 5 
+2.       Write the segment of Script that would ask the user if he wants a greeting message and if he does, display a Gif file called Welcome .gif and display “Welcome to Netscape.
+          Navigator!” in the document window following the Gif 
+		  3.
 3.       Write the object definition for an object called car with four properties model, make, year & price.
 4.       Write a program to display a multiplication table.
 5.       Write a code to create a scrolling text in a text box.

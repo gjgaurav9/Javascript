@@ -1,1 +1,2 @@
-alert("Welcome to my website");
+const value = prompt();
+alert("Welcome "+value);
