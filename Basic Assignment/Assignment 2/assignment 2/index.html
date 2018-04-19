@@ -7,70 +7,89 @@
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
-<body>
+<body onload="startTime()">
+
+  <div class = "container">
+  <header class = "projectheader">
+    <h1 id="txt"></h1>
+  </header>
+
+  <main>
   <section class="left"> 
-    <h3>Personal Copy </h3>
+    <p class="formtype">Personal Copy </p>
     <form>
-        <table style="border-spacing: 5px;">
+        <table style="border-spacing: 5px; align-self: center;">
         <tr>
           <td>Name <sup style="color:red;">*</sup></td>
           <td><input type=text name=name /></td>
+          <td></td>
         </tr>
         <tr>
           <td>Address</td>
           <td><input type=text name=address /></td>
+          <td></td>
         </tr>
         <tr>
-          <td>Zipcode</td>
+          <td>Zipcode<sup class="superscript">*</sup></td>
           <td><input type=text name=zipcode /></td>
+          <td></td>
         </tr>
         <tr>
-          <td>Country</td>
+          <td>Country<sup class="superscript">*</sup></td>
           <td>
-            <select name="country" style="width:50%;">
+            <select name="country" style="width:75%;">
+              <option selected>Please Select..</option>
               <option value="India">India</option>
               <option value="USA">USA</option>
               <option value="UK">UK</option>
               <option value="france">france</option>
             </select>
           </td>
+          <td></td>
         </tr>
         <tr>
-          <td>Gender</td>
+          <td>Gender<sup class="superscript">*</sup></td>
           <td>
             <input type="radio" name="gender" value="male" checked> Male
             <input type="radio" name="gender" value="female"> female
           </td>
+          <td></td>
         </tr>
         <tr>
-          <td>Preferences</td>
+          <td>Preferences<sup class="superscript">*</sup></td>
           <td><input type="checkbox" name="red" value="red">Red
             <input type="checkbox" name="green" value="green" checked>Green
-            <input type="checkbox" name="blue" value="blue">Blue</td>
+            <input type="checkbox" name="blue" value="blue">Blue
+          </td>
+          <td></td>
         </tr>
         <tr>
-          <td>Phone</td>
+          <td>Phone<sup class="superscript">*</sup></td>
           <td><input type=text name=phone /></td>
+          <td></td>
         </tr>
         <tr>
-          <td>Email</td>
+          <td>Email<sup class="superscript">*</sup></td>
           <td><input type=text name=email /></td>
+          <td></td>
         </tr>
         <tr>
-          <td>Password(6-8 Characters)</td>
+          <td>Password(6-8 Characters)<sup class="superscript">*</sup></td>
           <td><input type=text name=password /></td>
+          <td></td>
         </tr>
         <tr>
-          <td>Confirm Password</td>
+          <td>Confirm Password<sup class="superscript">*</sup></td>
           <td><input type=text name=confirmPassword /></td>
+          <td></td>
         </tr>  
         <tr>
             <td></td>
             <td>
               <button name="send">send</button>
               <button name="clear">clear</button>
-
             </td>
+            <td></td>
           </tr> 
       </table>
     </form>
@@ -78,12 +97,76 @@
   </section>
   <div class="vr"></div>
 
-  <aside class ="right">
-      <h3>Office Copy </h3>
+  <section class ="right">
+      <p class="formtype">Office Copy </p>
 
+      <form>
+        <table style="border-spacing: 5px; align-self: center;">
+          <tr>
+            <td>Name</td>
+            <td><input type=text name=name /></td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td><input type=text name=address /></td>
+          </tr>
+          <tr>
+            <td>Zipcode</td>
+            <td><input type=text name=zipcode /></td>
+          </tr>
+          <tr>
+            <td>Country</td>
+            <td>
+              <select name="country" style="width:75%;">
+                <option>Please select..</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="france">france</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gender" value="male" checked> Male
+              <input type="radio" name="gender" value="female"> female
+            </td>
+          </tr>
+          <tr>
+            <td>Preferences</td>
+            <td><input type="checkbox" name="red" value="red">Red
+              <input type="checkbox" name="green" value="green" checked>Green
+              <input type="checkbox" name="blue" value="blue">Blue</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td><input type=text name=phone /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type=text name=email /></td>
+          </tr>
+          <tr>
+            <td>Password(6-8 Characters)</td>
+            <td><input type=text name=password /></td>
+          </tr>
+          <tr>
+            <td>Confirm Password</td>
+            <td><input type=text name=confirmPassword /></td>
+          </tr>  
+          <tr>
+              <td></td>
+              <td></td>
+          </tr> 
+        </table>
+      </form>
+    </section>
+    </main>
 
-  </aside>
+  </div>
 
-  
+    <script src="app.js"></script>
+
 </body>
 </html>

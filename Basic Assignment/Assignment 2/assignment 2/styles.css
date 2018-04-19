@@ -1,23 +1,41 @@
 .vr {
-  width:1px;
+  width:2px;
   background-color:#000;
   position:absolute;
   top:0;
   bottom:0;
-  margin-left: 50%;
+  margin-left: 54%;
+  margin-top: 9em;
 }
 
 .left{
-  border: 1px solid red;
-  width:49%;
+  width: 55%;
   float: left;
   display: block;
 }
 
 .right{
-  border: 1px solid green;
-  width:49%;
+  width: 44%;
   float: right;
   display: block;
+}
+
+.projectheader{
+  width: 100%;
+}
+
+.container{
+  border: 1px solid black;
+  width: 100%;
+}
+
+.superscript{
+  color: red;
+}
+
+.formtype{
+  font-size: 25px;
+  margin-left: 100px;
+  text-decoration: underline;
 }
 
