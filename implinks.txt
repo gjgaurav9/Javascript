@@ -1,0 +1,8 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+https://docs.emmet.io/cheat-sheet/
+
+https://learn.shayhowe.com/html-css/building-your-first-web-page/
+
+https://learn.shayhowe.com/html-css/opening-the-box-model/
+
