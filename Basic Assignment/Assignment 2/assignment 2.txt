@@ -1,0 +1,27 @@
+Note:-Following are some constraint.
+Functional Requirement
+                -index.html
+                -css/ style.css
+                -images/all images
+                -color and design has to be developed using HTML5 / CSS3
+
+Coding Standard:
+1.	Use <div> to design the layout
+2.	Separate CSS code
+3.	Proper indentation
+4.	Proper comments of your logical part. 
+5.	Name validation cannot be blank.
+6.	Zip code must be of 6 digit and number.
+7.	Country has to be selected.
+8.	Gender has to be selected.
+9.	At least one preferences has to be selected.
+10.	Phone has to be number and 10 digit mobile number.
+11.	Proper email validation.
+12.	There must be range validation in password.
+13.	Required field validation must be in verify password.
+14.	After filling all information and when submit send button then value from personal copy is transferred into Office copy.
+15.	Value in Office copy cannot be editable.
+16.	Date and time display on  top should be current date and time
+17.	Use proper page name .
+
+
