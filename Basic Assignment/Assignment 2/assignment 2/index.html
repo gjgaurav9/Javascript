@@ -17,27 +17,27 @@
   <main>
   <section class="left"> 
     <p class="formtype">Personal Copy </p>
-    <form>
+    <form name="personalForm">
         <table style="border-spacing: 5px; align-self: center;">
         <tr>
           <td>Name <sup style="color:red;">*</sup></td>
-          <td><input type=text name=name /></td>
-          <td></td>
+          <td><input type=text name=name onsubmit="nameValidation(name)"></td>
+          <td><p id="namevalidation"></td>
         </tr>
         <tr>
           <td>Address</td>
-          <td><input type=text name=address /></td>
+          <td><input type=text name=address/></td>
           <td></td>
         </tr>
         <tr>
           <td>Zipcode<sup class="superscript">*</sup></td>
-          <td><input type=text name=zipcode /></td>
+          <td><input type=text name=zipcode required/></td>
           <td></td>
         </tr>
         <tr>
           <td>Country<sup class="superscript">*</sup></td>
           <td>
-            <select name="country" style="width:75%;">
+            <select name="country" style="width:75%;" required>
               <option selected>Please Select..</option>
               <option value="India">India</option>
               <option value="USA">USA</option>
@@ -49,44 +49,44 @@
         </tr>
         <tr>
           <td>Gender<sup class="superscript">*</sup></td>
-          <td>
-            <input type="radio" name="gender" value="male" checked> Male
+          <td required>
+            <input type="radio" name="gender" value="male"> Male
             <input type="radio" name="gender" value="female"> female
           </td>
           <td></td>
         </tr>
         <tr>
           <td>Preferences<sup class="superscript">*</sup></td>
-          <td><input type="checkbox" name="red" value="red">Red
-            <input type="checkbox" name="green" value="green" checked>Green
+          <td required><input type="checkbox" name="red" value="red">Red
+            <input type="checkbox" name="green" value="green">Green
             <input type="checkbox" name="blue" value="blue">Blue
           </td>
           <td></td>
         </tr>
         <tr>
           <td>Phone<sup class="superscript">*</sup></td>
-          <td><input type=text name=phone /></td>
+          <td><input type=text name=phone required/></td>
           <td></td>
         </tr>
         <tr>
           <td>Email<sup class="superscript">*</sup></td>
-          <td><input type=text name=email /></td>
+          <td><input type=text name=email required/></td>
           <td></td>
         </tr>
         <tr>
           <td>Password(6-8 Characters)<sup class="superscript">*</sup></td>
-          <td><input type=text name=password /></td>
+          <td><input type=password name=password required/></td>
           <td></td>
         </tr>
         <tr>
           <td>Confirm Password<sup class="superscript">*</sup></td>
-          <td><input type=text name=confirmPassword /></td>
+          <td><input type=password name=confirmPassword required/></td>
           <td></td>
         </tr>  
         <tr>
             <td></td>
             <td>
-              <button name="send">send</button>
+              <button type="submit" name="send">send</button>
               <button name="clear">clear</button>
             </td>
             <td></td>
@@ -100,7 +100,7 @@
   <section class ="right">
       <p class="formtype">Office Copy </p>
 
-      <form>
+      <form name="officeform">
         <table style="border-spacing: 5px; align-self: center;">
           <tr>
             <td>Name</td>
@@ -129,14 +129,14 @@
           <tr>
             <td>Gender</td>
             <td>
-              <input type="radio" name="gender" value="male" checked> Male
+              <input type="radio" name="gender" value="male"> Male
               <input type="radio" name="gender" value="female"> female
             </td>
           </tr>
           <tr>
             <td>Preferences</td>
             <td><input type="checkbox" name="red" value="red">Red
-              <input type="checkbox" name="green" value="green" checked>Green
+              <input type="checkbox" name="green" value="green">Green
               <input type="checkbox" name="blue" value="blue">Blue</td>
           </tr>
           <tr>
@@ -164,7 +164,7 @@
     </section>
     </main>
 
-  </div>
+  </div>  
 
     <script src="app.js"></script>
 

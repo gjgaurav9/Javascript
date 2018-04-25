@@ -18,3 +18,12 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
+
+
+function nameValidation(){
+
+    name = document.forms[][].value;
+    if(name =="" || name == null){
+        document.getElementById('namevalidation').innerHTML="name cannot be blank";
+    }
+}
