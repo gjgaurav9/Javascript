@@ -17,27 +17,27 @@
   <main>
   <section class="left"> 
     <p class="formtype">Personal Copy </p>
-    <form name="personalForm">
+    <form id="personalForm">
         <table style="border-spacing: 5px; align-self: center;">
         <tr>
           <td>Name <sup style="color:red;">*</sup></td>
-          <td><input type=text name=name onsubmit="nameValidation(name)"></td>
+          <td><input type=text id="name"></td>
           <td><p id="namevalidation"></td>
         </tr>
         <tr>
           <td>Address</td>
-          <td><input type=text name=address/></td>
+          <td><input type=text id="address"/></td>
           <td></td>
         </tr>
         <tr>
           <td>Zipcode<sup class="superscript">*</sup></td>
-          <td><input type=text name=zipcode required/></td>
+          <td><input type=text id="zipcode"/></td>
           <td></td>
         </tr>
         <tr>
           <td>Country<sup class="superscript">*</sup></td>
           <td>
-            <select name="country" style="width:75%;" required>
+            <select id="country" style="width:75%;" required>
               <option selected>Please Select..</option>
               <option value="India">India</option>
               <option value="USA">USA</option>
@@ -50,44 +50,44 @@
         <tr>
           <td>Gender<sup class="superscript">*</sup></td>
           <td required>
-            <input type="radio" name="gender" value="male"> Male
-            <input type="radio" name="gender" value="female"> female
+            <input type="radio" id="malegender" value="male"> Male
+            <input type="radio" id="femalegender" value="female"> female
           </td>
           <td></td>
         </tr>
         <tr>
           <td>Preferences<sup class="superscript">*</sup></td>
           <td required><input type="checkbox" name="red" value="red">Red
-            <input type="checkbox" name="green" value="green">Green
-            <input type="checkbox" name="blue" value="blue">Blue
+            <input type="checkbox" id="green" value="green">Green
+            <input type="checkbox" id="blue" value="blue">Blue
           </td>
           <td></td>
         </tr>
         <tr>
           <td>Phone<sup class="superscript">*</sup></td>
-          <td><input type=text name=phone required/></td>
+          <td><input type=text id="phone"/></td>
           <td></td>
         </tr>
         <tr>
           <td>Email<sup class="superscript">*</sup></td>
-          <td><input type=text name=email required/></td>
+          <td><input type=text id="email"/></td>
           <td></td>
         </tr>
         <tr>
           <td>Password(6-8 Characters)<sup class="superscript">*</sup></td>
-          <td><input type=password name=password required/></td>
+          <td><input type=password id="password"/></td>
           <td></td>
         </tr>
         <tr>
           <td>Confirm Password<sup class="superscript">*</sup></td>
-          <td><input type=password name=confirmPassword required/></td>
+          <td><input type=password id="confirmPassword"/></td>
           <td></td>
         </tr>  
         <tr>
             <td></td>
             <td>
-              <button type="submit" name="send">send</button>
-              <button name="clear">clear</button>
+              <button id="send_button" onclick="submit()">send</button>
+              <button id="clear">clear</button>
             </td>
             <td></td>
           </tr> 
@@ -100,24 +100,24 @@
   <section class ="right">
       <p class="formtype">Office Copy </p>
 
-      <form name="officeform">
+      <form id="officeform">
         <table style="border-spacing: 5px; align-self: center;">
           <tr>
             <td>Name</td>
-            <td><input type=text name=name /></td>
+            <td><input type=text id="officename"/></td>
           </tr>
           <tr>
             <td>Address</td>
-            <td><input type=text name=address /></td>
+            <td><input type=text id="officeaddress"/></td>
           </tr>
           <tr>
             <td>Zipcode</td>
-            <td><input type=text name=zipcode /></td>
+            <td><input type=text id="officezip"/></td>
           </tr>
           <tr>
             <td>Country</td>
             <td>
-              <select name="country" style="width:75%;">
+              <select id="officecountry" style="width:75%;">
                 <option>Please select..</option>
                 <option value="India">India</option>
                 <option value="USA">USA</option>
@@ -129,31 +129,31 @@
           <tr>
             <td>Gender</td>
             <td>
-              <input type="radio" name="gender" value="male"> Male
-              <input type="radio" name="gender" value="female"> female
+              <input type="radio" id="officemale" value="officemale"> Male
+              <input type="radio" id="officefemale" value="officefemale"> Female
             </td>
           </tr>
           <tr>
             <td>Preferences</td>
-            <td><input type="checkbox" name="red" value="red">Red
-              <input type="checkbox" name="green" value="green">Green
-              <input type="checkbox" name="blue" value="blue">Blue</td>
+            <td><input type="checkbox" id="officered" value="officered">Red
+              <input type="checkbox" id="officegreen" value="officegreen">Green
+              <input type="checkbox" id="officeblue" value="officeblue">Blue</td>
           </tr>
           <tr>
             <td>Phone</td>
-            <td><input type=text name=phone /></td>
+            <td><input type=text id="officephone"/></td>
           </tr>
           <tr>
             <td>Email</td>
-            <td><input type=text name=email /></td>
+            <td><input type=text id="officeemail"/></td>
           </tr>
           <tr>
             <td>Password(6-8 Characters)</td>
-            <td><input type=text name=password /></td>
+            <td><input type=text id="officepassword"/></td>
           </tr>
           <tr>
             <td>Confirm Password</td>
-            <td><input type=text name=confirmPassword /></td>
+            <td><input type=text id="officevpassword"/></td>
           </tr>  
           <tr>
               <td></td>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="../css/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <!--<script language="JavaScript" src="../node_modules/moment/moment.js"></script>-->
+
+</head>
+<body onload="showDate();">
+
+<div class="border">
+    <div>
+        <h2 id="date"></h2>
+    </div>
+
+    <div class="form1">
+
+        <h4><u>Personal Copy</u></h4>
+
+        <div> Name<sup class="red_text">*</sup> <input type="text" id="name" class="inputboxform1"> <i id="name_warning" class="warning_text"></i> </div>
+
+        <div> Address<sup class="red_text">*</sup> <input type="text" id="address" class="inputboxform1"> <i id="address_warning" class="warning_text"></i> </div>
+
+        <div> Zip Code<sup class="red_text">*</sup> <input type="text" id="zip" class="inputboxform1"> <i id="zip_warning" class="warning_text"></i> </div>
+
+        <div> Country<sup class="red_text">*</sup> <select id="country" class="inputboxform1">
+            <option value="select">Please Select</option>
+            <option value="india">India</option>
+            <option value="us">United Stated</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select> <i id="country_warning" class="warning_text"></i> </div>
+
+        <div>Gender<sup class="red_text">*</sup> <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female <i id="gender_warning" class="warning_text"></i> </div>
+
+        <div> Preferences<sup class="red_text">*</sup> <label><input type="checkbox" id="red"> Red</label>
+            <label><input type="checkbox" id="green">Green</label>
+            <label><input type="checkbox" id="blue">Blue</label> <i id="preference_warning" class="warning_text"></i> </div>
+
+        <div> Phone<sup class="red_text">*</sup> <input type="text" id="phone" class="inputboxform1"> <i id="phone_warning" class="warning_text"></i> </div>
+
+        <div> Email<sup class="red_text">*</sup> <input type="text" id="email" class="inputboxform1"> <i id="email_warning" class="warning_text"></i> </div>
+
+        <div> Password<sup class="red_text">*</sup> <input type="text" id="password" class="inputboxform1"> <i id="password_warning" class="warning_text"></i> </div>
+
+        <div> Verify Password<sup class="red_text">*</sup> <input type="text" id="vpassword" class="inputboxform1"> <i id="verify_warning" class="warning_text"></i> </div>
+
+        <div class="inputboxform1"> <button id="send_btn" onclick="submit()">Send</button> <button id="clear_btn" onclick="clear();">Clear</button></div>
+
+    </div>
+
+    <div class="hspacer">&nbsp;</div>
+
+    <div class="form2">
+
+        <h4><u>Office Copy</u></h4>
+
+        <div> Name<sup></sup><input type="text" id="officename" class="inputboxform2"></div>
+
+        <div> Address<sup></sup><input type="text" id="officeaddress" class="inputboxform2"></div>
+
+        <div> Zip Code<sup></sup><input type="text" id="officezip" class="inputboxform2"></div>
+
+        <div> Country<sup></sup><select id="officecountry" class="inputboxform2">
+            <option value="select">Please Select</option>
+            <option value="india">India</option>
+            <option value="us">United Stated</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select></div>
+
+        <div><form> Gender<sup></sup><input id="officemale" type="radio" name="officegender" value="male"> <label for="officemale">Male</label>
+            <input id="officefemale" type="radio" name="officegender" value="female"><label for="officefemale">Female</label></form></div>
+
+        <div> Preferences<sup></sup><input type="checkbox" id="officered"><label for="officered">Red</label>
+            <input type="checkbox" id="officegreen"><label for="officegreen">Green</label>
+            <input type="checkbox" id="officeblue"><label for="officeblue">Blue</label>
+        </div>
+
+        <div> Phone<sup></sup><input type="text" id="officephone" class="inputboxform2"></div>
+
+        <div> Email<sup></sup><input type="text" id="officeemail" class="inputboxform2"></div>
+
+        <div> Password<sup></sup><input type="text" id="officepassword" class="inputboxform2"></div>
+
+        <div> Verify Password<sup></sup><input type="text" id="officevpassword" class="inputboxform2"></div>
+
+    </div>
+</div>
+<script language="JavaScript" src="../js/index.js"></script>
+
+</body>
+</html>
