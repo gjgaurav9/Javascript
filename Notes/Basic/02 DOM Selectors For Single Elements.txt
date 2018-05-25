@@ -1,0 +1,13 @@
+ var zipcode = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;  
+
+        if((zip.value.match(zipcode))  
+        {
+            document.getElementById("officezip").value = document.getElementById("zipcode").value;
+        }else{
+            document.getElementById('zipvalidation').innerHTML ="Zip code should be a number";
+}
+
+
+  var phoneno = /^\d{10}$/;
+  
+  email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value)

@@ -32,7 +32,7 @@
         <tr>
           <td>Zipcode<sup class="superscript">*</sup></td>
           <td><input type=text id="zipcode"/></td>
-          <td></td>
+          <td><p id="zipvalidation"></p></td>
         </tr>
         <tr>
           <td>Country<sup class="superscript">*</sup></td>
@@ -45,19 +45,19 @@
               <option value="france">france</option>
             </select>
           </td>
-          <td></td>
+          <td><p id="countryvalidation"></p></td>
         </tr>
         <tr>
           <td>Gender<sup class="superscript">*</sup></td>
-          <td required>
-            <input type="radio" id="malegender" value="male"> Male
-            <input type="radio" id="femalegender" value="female"> female
+          <td>
+            <input type="radio" id="male" value="male"> Male
+            <input type="radio" id="female" value="female"> female
           </td>
           <td></td>
         </tr>
         <tr>
           <td>Preferences<sup class="superscript">*</sup></td>
-          <td required><input type="checkbox" name="red" value="red">Red
+          <td><input type="checkbox" id="red" value="red">Red
             <input type="checkbox" id="green" value="green">Green
             <input type="checkbox" id="blue" value="blue">Blue
           </td>
@@ -66,12 +66,12 @@
         <tr>
           <td>Phone<sup class="superscript">*</sup></td>
           <td><input type=text id="phone"/></td>
-          <td></td>
+          <td><p id="phonevalidation"></p></td>
         </tr>
         <tr>
           <td>Email<sup class="superscript">*</sup></td>
           <td><input type=text id="email"/></td>
-          <td></td>
+          <td><p id="emailvalidation"></p></td>
         </tr>
         <tr>
           <td>Password(6-8 Characters)<sup class="superscript">*</sup></td>
@@ -86,7 +86,7 @@
         <tr>
             <td></td>
             <td>
-              <button id="send_button" onclick="submit()">send</button>
+              <input type="button" id="send_button" value="send"></input>
               <button id="clear">clear</button>
             </td>
             <td></td>
@@ -129,15 +129,15 @@
           <tr>
             <td>Gender</td>
             <td>
-              <input type="radio" id="officemale" value="officemale"> Male
-              <input type="radio" id="officefemale" value="officefemale"> Female
+              <input type="radio" id="officemale"> Male
+              <input type="radio" id="officefemale"> Female
             </td>
           </tr>
           <tr>
             <td>Preferences</td>
-            <td><input type="checkbox" id="officered" value="officered">Red
-              <input type="checkbox" id="officegreen" value="officegreen">Green
-              <input type="checkbox" id="officeblue" value="officeblue">Blue</td>
+            <td><input type="checkbox" id="officered">Red
+              <input type="checkbox" id="officegreen">Green
+              <input type="checkbox" id="officeblue">Blue</td>
           </tr>
           <tr>
             <td>Phone</td>

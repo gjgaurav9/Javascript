@@ -58,8 +58,8 @@ function submit() {
         document.getElementById("officered").checked = document.getElementById("red").checked;
         document.getElementById("officegreen").checked = document.getElementById("green").checked;
         document.getElementById("officeblue").checked = document.getElementById("blue").checked;
-        document.getElementById("officemale").checked = document.getElementById("male").checked;
-        document.getElementById("officefemale").checked = document.getElementById("female").checked;
+        document.getElementById("officemale").checked = document.getElementById("malegender").checked;
+        document.getElementById("officefemale").checked = document.getElementById("femalegender").checked;
         document.getElementById("officecountry").value = document.getElementById("country").value
     }
 }

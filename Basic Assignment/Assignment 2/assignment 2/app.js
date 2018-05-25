@@ -27,6 +27,8 @@ function validateForm() {
     }
 }
 
+ document.getElementById("send_button").onclick = submit;
+
 
 
 function submit() {
@@ -44,14 +46,51 @@ function submit() {
         // document.getElementById("password_warning").innerHTML = "";
         // document.getElementById("verify_warning").innerHTML = "";
 
-        localStorage.setItem('sname', document.getElementById("name").value);
-        console.log(sname);
+        // localStorage.setItem('sname', document.getElementById("name").value);
+        // console.log(sname);
 
-        document.getElementById("officename").value = document.getElementById("name").value;
+        console.log(document.getElementById("address").value);
+        console.log(document.getElementById("name").value);
+
+        var name= document.getElementById("name").value;
+
+        if (name == "") {
+            document.getElementById('namevalidation').innerHTML ="Please enter the name";
+        }else{
+            document.getElementById("officename").value = name;
+        }
+
         document.getElementById("officeaddress").value = document.getElementById("address").value;
-        document.getElementById("officezip").value = document.getElementById("zipcode").value;
-        document.getElementById("officephone").value = document.getElementById("phone").value;
-        document.getElementById("officeemail").value = document.getElementById("email").value;
+        
+
+        var zip = document.getElementById("zipcode").value;
+        console.log(zip);
+
+        var zipregx = "^[1-9][0-9]{5}$";  
+
+        if(zip.match(zipregx))  {
+            document.getElementById("officezip").value = zip
+        }else{
+            document.getElementById('zipvalidation').innerHTML ="Zip code should be a number";
+        }
+
+        var phone = document.getElementById("phone").value;
+        var phonenoregx = /^\d{10}$/;
+
+        if(phone.match(phonenoregx))  {
+            document.getElementById("officephone").value = phone;
+        }else{
+            document.getElementById('phonevalidation').innerHTML ="Invalid phone number.";
+        }
+
+        var email = document.getElementById("email").value;
+
+        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))  {
+            document.getElementById("officeemail").value = email;
+        }else{
+            document.getElementById('emailvalidation').innerHTML ="Invalid email id";
+        }
+        
         document.getElementById("officepassword").value = document.getElementById("password").value;
         document.getElementById("officevpassword").value = document.getElementById("confirmPassword").value;
         document.getElementById("officered").checked = document.getElementById("red").checked;
@@ -59,5 +98,12 @@ function submit() {
         document.getElementById("officeblue").checked = document.getElementById("blue").checked;
         document.getElementById("officemale").checked = document.getElementById("male").checked;
         document.getElementById("officefemale").checked = document.getElementById("female").checked;
-        document.getElementById("officecountry").value = document.getElementById("country").value
+
+        var country= document.getElementById("country").value;
+
+        if (country == "") {
+            document.getElementById('countryvalidation').innerHTML ="Please enter the country";
+        }else{
+            document.getElementById("officecountry").value = country;
+        }
     }
