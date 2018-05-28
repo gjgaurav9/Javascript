@@ -7,9 +7,9 @@
  * 5. Let the player choose to play again.  
  */
 
- let min=1,
-     max=10,
-     winningNum = 2;
+ let min=7,
+     max=20,
+     winningNum =  getRandomNumber(max, min);
      guessesLeft = 3 ;
 
 
@@ -27,6 +27,14 @@
 minNum.textContent = min;
 maxNum.textContent = max;
 
+//Play again evert listner
+game.addEventListener ('mousedown', function(e){
+    if(e.target.className === 'play-again') {
+        window.location.reload();
+    }
+
+}) ;
+
 // Listen for the guess
 
 guessBtn.addEventListener('click', function(){
@@ -40,10 +48,7 @@ guessBtn.addEventListener('click', function(){
    //check if won
    if(guess === winningNum){
         //Gameover - won 
-        //disable the input
-        guessInput.disabled = true;
-        guessInput.style.borderColor = 'green';
-        setMessage(`${winningNum} is correct, you Won`,'green');
+        gameOver(true, `${winningNum} is correct, You Win`);
    }else{
 
        guessesLeft -= 1;
@@ -51,20 +56,14 @@ guessBtn.addEventListener('click', function(){
        if(guessesLeft === 0 ){
            //Gameover- 
            //disable the input
-        guessInput.disabled = true;
-        guessInput.style.borderColor = 'red';
-        setMessage(`Game Over, you lost the correct number is ${winningNum}`,'red');
+       gameOver(false ,`Game Over, you lost the correct number is ${winningNum}`);
 
        }else{
             guessInput.style.borderColor = 'red';
             guessInput.value = '';
            setMessage(`${guess} is not correct, only ${guessesLeft} guesses left`,'red');
        }
-
-
    }
-
-
 });
 
 
@@ -74,4 +73,23 @@ function setMessage(msg , color){
 }
 
 
- 
+ function gameOver(won, msg){
+
+    won === true ? color = 'green' : color  = 'red';
+
+    guessInput.disabled = true;
+    guessInput.style.borderColor = color;
+    setMessage(msg, color);
+
+    guessBtn.value = 'Play Again';
+    guessBtn.className += 'play-again';
+
+ }  
+
+ function getRandomNumber(max, min){
+
+    //console.log(Math.floor(Math.random()*(max-min+1)+min));
+
+    return Math.floor(Math.random()*(max-min+1)+min);
+
+ }
