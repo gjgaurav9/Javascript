@@ -10,8 +10,14 @@
   <title>Document</title>
 </head>
 <body>
-
+  
   <div class="container">
+
+  </div>
+
+
+
+  <!-- <div class="container">
     <div class="page-header">
 
       <h1>bootstrap learning</h1>
@@ -38,7 +44,86 @@
 
 
 
+  </div> -->
+
+
+  <div class="custom-container">
+      <div class="custom-head-text"><span>Customer List</span>
+          <button type="button" id="addNewCustomer" onclick="addNewCustomerButton();" data-toggle="modal" data-target="#addCustomerModal">
+              <span>Add New</span>
+          </button>
+          <input type="text" class="custom-searchText" placeholder="Search by Name" onkeyup="getSearchText(this.value);"/>
+      </div>
+  
+      <div class="custom-body-section">
+          <div class="custom-left-box" id="customerList">
+          </div>
+          <div class="custom-right-box" id="customerDetails">
+  
+          </div>
+      </div>
+      <button type="button" onclick="clearAllData();">Clear all data</button>
   </div>
+  <!-- bootstrap modal -->
+  <div class="modal fade" id="addCustomerModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+       aria-hidden="true">
+      <div class="modal-dialog modal-md">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <h4 class="modal-title" id="myModalLabel">Add New Customer</h4>
+              </div>
+              <span id="custom-validation-message"></span>
+              <div class="modal-body">
+                  <div class="row">
+                      <form role="form" id="addCustomerForm" class="form-horizontal">
+                          <div class="col-md-8">
+                              <!-- Tab panes -->
+                              <div class="tab-content">
+                                  <div class="tab-pane active" id="Login">
+  
+                                      <div class="form-group">
+                                          <label for="name" class="col-sm-2 control-label">
+                                              Name</label>
+                                          <div class="col-sm-10">
+                                              <input type="text" class="form-control" id="name" placeholder="Enter Name" />
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="email" class="col-sm-2 control-label">
+                                              Email</label>
+                                          <div class="col-sm-10">
+                                              <input type="email" class="form-control" id="email" placeholder="Enter Email" />
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-2">
+                                          </div>
+                                          <div class="col-sm-10" align="center">
+                                              <button type="button" class="btn btn-default btn-md" onclick="return addNewCustomer();">
+                                                  Add</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <a href="javascript:;" onclick="getFileBrowse();">
+                                  <div class="thumbnail">
+                                      <img src="" id="profileImage">
+                                  </div>
+                              </a>
+                              <div id="uploadPhotoBtn" onclick="getFileBrowse();"><u><a href="javascript:;">Click to upload photo</a></u></div>
+                              <input type="file" id="my_file" style="display: none;" onchange="readURL(this);"/>
+                              <input type="hidden" id="profileSource">
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
 
 
 
@@ -46,10 +131,10 @@
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   
 </body>
 </html>
